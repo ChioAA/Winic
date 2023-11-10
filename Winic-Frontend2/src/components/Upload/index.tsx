@@ -41,11 +41,15 @@ const Upload = () => {
       // const isVisibleAccount = accounts?.some(
       //   (visibleAccount) => visibleAccount.address === localaccount
       // );
-      const metadata = new ProgramMetadata(metaUint, 1, 0);
-      
+      const metadata = new ProgramMetadata(metaUint, 0, 0);
+      data.action
       const message: any = {
         destination: '0x00a019b76fcdd46e8d55ea38c2a57c994aa7853d665b4c438b64ed6e81dca88f', // programId
-        payload: data,
+        payload: {
+          "_variants": {
+              "ExampleAction": null
+          }
+      },
         gasLimit: 10000000,
         value: 0,
         // prepaid: true,
