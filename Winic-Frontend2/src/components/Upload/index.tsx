@@ -63,9 +63,7 @@ const Upload = () => {
       console.error(`${error.name}: ${error.message}`);
     }
   }
-  const onSumit = (data: any) => {
-
-  }
+  
   return (
     <div className="flex flex-col items-center w-2/6">
       <h1 className="">Subir Producto</h1>
