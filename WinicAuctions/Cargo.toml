@@ -9,6 +9,7 @@ io = { path = "io" }
 gstd = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47" }
 gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47" }
 hashbrown = "0.14"
+primitive-types = "0.12.2"
 
 [build-dependencies]
 io = { path = "io" }

@@ -504,6 +504,7 @@ dependencies = [
  "gtest",
  "hashbrown 0.14.2",
  "io",
+ "primitive-types",
  "state",
  "tokio",
 ]
