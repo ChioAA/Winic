@@ -22,7 +22,7 @@ const Upload = () => {
     const mnemonic = GearKeyring.generateMnemonic();
     setMnemonictext(mnemonic);
   };
-  const init = async () => {
+  const init = async (data: any) => {
     // const { mnemonic, seed } = GearKeyring.generateMnemonic();
     // const { keyring, json } = await GearKeyring.create('keyringName', 'passphrase');
 
@@ -44,7 +44,7 @@ const Upload = () => {
       const metadata = new ProgramMetadata(metaUint, 1, 0);
       const message: any = {
         destination: '0x00a019b76fcdd46e8d55ea38c2a57c994aa7853d665b4c438b64ed6e81dca88f', // programId
-        payload: {},
+        payload: data,
         gasLimit: 10000000,
         value: 0,
         // prepaid: true,
@@ -117,7 +117,7 @@ const Upload = () => {
             })}
         />
         </div>
-        <Button className="bg-purple" type="submit" text="Send" />;
+        <Button className="bg-purple mt-10" type="submit" text="Send" />;
       </form>
       {/* <Button text="Approve" onClick={init} />; */}
     </div>
