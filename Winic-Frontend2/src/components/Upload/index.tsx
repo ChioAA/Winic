@@ -47,9 +47,7 @@ const Upload = () => {
       const message: any = {
         destination: '0x00a019b76fcdd46e8d55ea38c2a57c994aa7853d665b4c438b64ed6e81dca88f', // programId
         payload: {
-          "_variants": {
-              "ExampleAction": null
-          }
+          data
       },
         gasLimit: 10000000,
         value: 0,
@@ -66,6 +64,7 @@ const Upload = () => {
         console.error(`ERRROR ${error.name}: ${error.message}`);
       }
     } catch (error: any) {
+      alert('Succcess');
       console.error(`${error.name}: ${error.message}`);
     }
   }
