@@ -18,7 +18,7 @@ module.exports = {
     colors: {
       'globalWhite': '#FFFFFF',
       'grayMedium': '#00000029',
-      'purple': '#B13CFF',
+      'purple': '#3CFF60',
       'grayHigh': '#BDBDBD',
       'grayLow':'#EEEDED',
       'black': '#000000',

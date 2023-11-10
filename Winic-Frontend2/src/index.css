@@ -11,11 +11,11 @@
 }
 
 @layer components {
-  .buttonLogin{
-    @apply px-8 py-2  bg-gradient-to-b from-pink to-purple rounded-lg text-globalWhite font-bold float-right;
-  }
 
   .inputNumber{
     @apply w-full rounded-md border-purple focus:outline-none focus:border-purple box-border border focus:ring-1 focus:ring-purple my-0 ;
+  }
+  .labelTxt{
+    @apply text-sm  font-bold text-black;
   }
 }

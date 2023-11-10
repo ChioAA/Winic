@@ -67,11 +67,11 @@ const Upload = () => {
 
   }
   return (
-    <>
-      <h2>Subir Producto</h2>
+    <div className="flex flex-col items-center w-2/6">
+      <h1 className="">Subir Producto</h1>
       <form className="flex flex-col" onSubmit={handleSubmit(init)}>
         <div>
-          <label htmlFor="">Price</label>
+          <label htmlFor="" className="labelTxt">Price</label>
           <input type="text" className="inputNumber"
             {...register('starting_price',
               {
@@ -83,7 +83,7 @@ const Upload = () => {
           />
         </div>
         <div>
-          <label htmlFor="">Token Owner</label>
+          <label htmlFor="" className="labelTxt">Token Owner</label>
           <input type="text" className="inputNumber"
             {...register('token_owner',
               {
@@ -96,7 +96,7 @@ const Upload = () => {
         </div>
 
         <div>
-          <label htmlFor="">discount rate </label>
+          <label htmlFor="" className="labelTxt">discount rate </label>
           <input type="text" className="inputNumber"
             {...register('discount_rate',
               {
@@ -108,7 +108,7 @@ const Upload = () => {
           />
         </div>
         <div>
-          <label htmlFor="">Time</label>
+          <label htmlFor="" className="labelTxt">Time</label>
           <input type="text" className="inputNumber"
           {...register('time_left',
             {
@@ -119,10 +119,10 @@ const Upload = () => {
             })}
         />
         </div>
-        <Button type="submit" text="Send" />;
+        <Button className="bg-purple" type="submit" text="Send" />;
       </form>
       {/* <Button text="Approve" onClick={init} />; */}
-    </>
+    </div>
   )
 }
 
